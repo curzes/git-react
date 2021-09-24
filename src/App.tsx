@@ -7,13 +7,13 @@ import {
   Route
 } from "react-router-dom";
 
+import FetchReactTest from './components/FetchReactTest';
+
+
 function App() {
   return (
     <Router>
-      <Navbar />
-      <Switch>
-        <Route path="/"></Route>
-      </Switch>
+      <FetchReactTest />
     </Router>
   );
 }

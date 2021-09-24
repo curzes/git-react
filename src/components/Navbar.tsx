@@ -3,6 +3,7 @@ import logo from '../logo.svg';
 import { Link } from 'react-router-dom';
 import SearchOrJumpTo from './SearchOrJumpTo';
 import Dropdown from './Dropdown';
+import FetchReactTest from './FetchReactTest';
 
 export default function Navbar() {
     return (
@@ -27,7 +28,8 @@ export default function Navbar() {
                     </li>
                 </ul>
             </nav>
-            <Dropdown />
+            <Dropdown specialName={[1, 2, 3, 4]} />
+            <FetchReactTest />
         </header>
     )
 }

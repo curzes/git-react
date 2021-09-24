@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
-export default function Dropdown() {
+export default function Dropdown(props: any) {
 
-    const [open, setOpen] = useState('open');
+    const [open, setOpen] = useState<string>('');
 
+    console.log(props);
+    console.log(typeof (props));
 
     return (
         <div>
